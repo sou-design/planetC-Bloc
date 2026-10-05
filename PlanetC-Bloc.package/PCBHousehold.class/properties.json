@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "PlanetC-Bloc-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"game",
+		"color",
+		"harvesters"
+	],
+	"name" : "PCBHousehold",
+	"type" : "normal"
+}

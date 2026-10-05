@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "BlEventListener",
+	"category" : "PlanetC-Bloc-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"game"
+	],
+	"name" : "PCBCellEventListener",
+	"type" : "normal"
+}

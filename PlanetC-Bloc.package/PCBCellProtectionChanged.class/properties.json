@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Announcement",
+	"category" : "PlanetC-Bloc-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"cell"
+	],
+	"name" : "PCBCellProtectionChanged",
+	"type" : "normal"
+}
