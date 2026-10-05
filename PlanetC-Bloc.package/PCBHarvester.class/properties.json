@@ -7,7 +7,6 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"household",
-		"cell",
 		"collectedBiomass"
 	],
 	"name" : "PCBHarvester",

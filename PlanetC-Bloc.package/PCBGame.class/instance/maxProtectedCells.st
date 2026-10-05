@@ -1,0 +1,3 @@
+accessing
+maxProtectedCells
+	^ 3

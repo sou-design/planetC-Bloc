@@ -1,0 +1,3 @@
+initialization
+collectedBiomass
+	^ collectedBiomass

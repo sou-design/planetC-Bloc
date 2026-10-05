@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"cells"
+		"cells",
+		"households"
 	],
 	"name" : "PCBGame",
 	"type" : "normal"
