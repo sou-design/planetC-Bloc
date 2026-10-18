@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "PlanetC-Bloc-Tests-UITests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"game",
+		"element"
+	],
+	"name" : "PCBGameElementTest",
+	"type" : "normal"
+}
