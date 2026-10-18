@@ -1,6 +1,5 @@
 as yet unclassified
 chipFor: aHousehold count: aNumber
-	"A white pill with a dot in the family colour and the number of its harvesters here"
 	| chip dot |
 	chip := BlElement new
 		layout: (BlLinearLayout horizontal cellSpacing: 3; yourself);

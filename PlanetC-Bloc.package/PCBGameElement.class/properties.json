@@ -11,7 +11,9 @@
 		"cellElements",
 		"roundLabel",
 		"actionButton",
-		"birdsButton"
+		"birdsButton",
+		"resultBox",
+		"familyButtons"
 	],
 	"name" : "PCBGameElement",
 	"type" : "normal"

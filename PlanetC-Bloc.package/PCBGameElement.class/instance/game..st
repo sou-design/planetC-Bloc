@@ -14,4 +14,13 @@ game: aGame
 			yourself ].
 	board addChildren: cellElements.
 	self addChild: board.
+	resultBox := BlElement new
+		layout: (BlLinearLayout vertical cellSpacing: 4; yourself);
+		padding: (BlInsets all: 10);
+		constraintsDo: [ :c |
+			c horizontal fitContent.
+			c vertical fitContent ];
+		yourself.
+	self addChild: resultBox.
+	self addChild: self buildFamiliesBar.
 	self refresh

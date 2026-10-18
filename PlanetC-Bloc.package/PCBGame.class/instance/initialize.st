@@ -2,7 +2,8 @@ initialization
 initialize
 	super initialize.
 	announcer := Announcer new.
-	birdsVisible := false.
+	totalNewborns := 0.
+	birdsVisible := true.
 	cells := self initialBiomass withIndexCollect: [ :each :index |
 		PCBCell new
 			id: index;
@@ -12,7 +13,7 @@ initialize
 			yourself ].
 	self initializeNeighbourhoods.
 	self initializeHouseHolds.
-		currentRound := 1.
+	currentRound := 1.
 	maxRounds := 5.
 	phase := #ready.
 	activeHousehold := households first

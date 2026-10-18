@@ -1,32 +1,32 @@
 initialization
 initialize
 	super initialize.
+	showBirds := false.
 	self
-		layout: BlFrameLayout new;
+		layout: (BlLinearLayout vertical cellSpacing: 1; yourself);
 		extent: 112 @ 112;
-		geometry: (BlRoundedRectangleGeometry cornerRadius: 6);
-		padding: (BlInsets all: 6).
-	idLabel := BlTextElement new.
-	idLabel constraintsDo: [ :c |
-		c frame horizontal alignLeft.
-		c frame vertical alignTop ].
+		padding: (BlInsets all: 6);
+		geometry: (BlRoundedRectangleGeometry cornerRadius: 1).
+
+	cellId := BlTextElement new.
+
 	chipsBox := BlElement new
-		layout: BlFlowLayout horizontal;
-		constraintsDo: [ :c |
-			c horizontal matchParent.
-			c vertical fitContent.
-			c frame vertical alignBottom ];
-		yourself.
-	idLabel preventMeAndChildrenMouseEvents.
-	chipsBox preventMeAndChildrenMouseEvents.
-		showBirds := false.
-	birdsBox := BlElement new
-		layout: (BlLinearLayout horizontal cellSpacing: 3; yourself);
+		layout: (BlLinearLayout horizontal cellSpacing: 4; yourself);
 		constraintsDo: [ :c |
 			c horizontal fitContent.
-			c vertical fitContent.
-			c frame horizontal alignRight.
-			c frame vertical alignTop ];
+			c vertical fitContent ];
 		yourself.
+		
+	birdsBox := BlElement new
+		layout: (BlLinearLayout horizontal cellSpacing: 4; yourself);
+		constraintsDo: [ :c |
+			c horizontal fitContent.
+			c vertical fitContent ];
+		yourself.
+
+	cellId preventMeAndChildrenMouseEvents.
+	chipsBox preventMeAndChildrenMouseEvents.
 	birdsBox preventMeAndChildrenMouseEvents.
-	self addChildren: { idLabel. chipsBox. birdsBox }
+	self addChild: cellId.
+	self addChild: chipsBox.
+	self addChild: birdsBox

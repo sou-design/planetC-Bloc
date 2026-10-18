@@ -4,4 +4,5 @@ label: aString
 		fontSize: 14;
 		bold;
 		foreground: Color white;
-		yourself)
+		yourself).
+		label := aString.

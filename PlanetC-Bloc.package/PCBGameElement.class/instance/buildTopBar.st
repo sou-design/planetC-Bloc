@@ -6,11 +6,11 @@ buildTopBar
 		constraintsDo: [ :c | c horizontal matchParent. c vertical fitContent ];
 		yourself.
 	titles := BlElement new
-		layout: (BlLinearLayout vertical cellSpacing: 2; yourself);
+		layout: (BlLinearLayout vertical cellSpacing: 12; yourself);
 		constraintsDo: [ :c | c horizontal fitContent. c vertical fitContent ];
 		yourself.
 	titles addChild: (BlTextElement new
-		text: ('PlanetC' asRopedText fontSize: 28; bold;
+		text: ('PlanetC Game' asRopedText fontSize: 28; bold;
 			foreground: (Color fromHexString: '2F6B4F'); yourself);
 		yourself).
 	roundLabel := BlTextElement new.

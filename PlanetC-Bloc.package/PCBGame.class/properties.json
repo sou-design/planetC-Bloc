@@ -13,7 +13,8 @@
 		"phase",
 		"activeHousehold",
 		"announcer",
-		"birdsVisible"
+		"birdsVisible",
+		"totalNewborns"
 	],
 	"name" : "PCBGame",
 	"type" : "normal"
