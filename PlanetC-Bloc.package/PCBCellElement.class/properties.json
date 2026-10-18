@@ -6,7 +6,11 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"cell"
+		"cell",
+		"idLabel",
+		"chipsBox",
+		"birdsBox",
+		"showBirds"
 	],
 	"name" : "PCBCellElement",
 	"type" : "normal"

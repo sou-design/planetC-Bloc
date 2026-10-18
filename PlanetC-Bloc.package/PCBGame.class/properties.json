@@ -1,13 +1,19 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "PlanetC-Bloc-Model",
+	"category" : "PlanetC-Bloc-Game",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
 		"cells",
-		"households"
+		"households",
+		"currentRound",
+		"maxRounds",
+		"phase",
+		"activeHousehold",
+		"announcer",
+		"birdsVisible"
 	],
 	"name" : "PCBGame",
 	"type" : "normal"

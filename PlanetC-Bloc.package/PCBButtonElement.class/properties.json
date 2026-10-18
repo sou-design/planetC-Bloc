@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "BlElement",
+	"category" : "PlanetC-Bloc-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"action",
+		"labelElement"
+	],
+	"name" : "PCBButtonElement",
+	"type" : "normal"
+}

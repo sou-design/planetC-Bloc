@@ -1,3 +1,4 @@
 adding
 addHarvester: aHarvester
-	harvesters add: aHarvester
+	harvesters add: aHarvester.
+	self notifyChanged

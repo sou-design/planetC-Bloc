@@ -1,0 +1,3 @@
+accessing
+isNewBiomass
+	^ phase = #newBiomass

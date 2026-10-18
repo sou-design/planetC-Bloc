@@ -9,7 +9,16 @@
 		"biomass",
 		"protected",
 		"announcer",
-		"harvesters"
+		"harvesters",
+		"biomassToApply",
+		"nonHarvestTime",
+		"id",
+		"row",
+		"column",
+		"neighbours",
+		"adultBirds",
+		"newbornBirds",
+		"nbNewBorns"
 	],
 	"name" : "PCBCell",
 	"type" : "normal"

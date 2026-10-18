@@ -1,4 +1,3 @@
-as yet unclassified
+initialization
 activeHarvesters
-	^ harvesters select: [ :h |
-		game cells anySatisfy: [ :c | c harvesters includes: h ] ]
+	^ harvesters select: [ :each | each isPlaced ]

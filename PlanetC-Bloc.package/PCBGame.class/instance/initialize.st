@@ -1,8 +1,18 @@
 initialization
 initialize
 	super initialize.
-	cells := self initialBiomass collect: [ :each |
+	announcer := Announcer new.
+	birdsVisible := false.
+	cells := self initialBiomass withIndexCollect: [ :each :index |
 		PCBCell new
+			id: index;
+			row: index - 1 // self columns + 1;
+			column: index - 1 \\ self columns + 1;
 			biomass: each;
 			yourself ].
-	self initializeHouseHolds
+	self initializeNeighbourhoods.
+	self initializeHouseHolds.
+		currentRound := 1.
+	maxRounds := 5.
+	phase := #ready.
+	activeHousehold := households first

@@ -8,7 +8,9 @@
 	"instvars" : [
 		"game",
 		"color",
-		"harvesters"
+		"harvesters",
+		"index",
+		"gains"
 	],
 	"name" : "PCBHousehold",
 	"type" : "normal"

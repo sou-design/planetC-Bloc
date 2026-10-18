@@ -1,0 +1,3 @@
+accessing
+isRangerTurn
+	^ phase = #rangerTurn

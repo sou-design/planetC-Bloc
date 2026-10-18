@@ -1,0 +1,3 @@
+accessing
+isOver
+	^ phase = #ended

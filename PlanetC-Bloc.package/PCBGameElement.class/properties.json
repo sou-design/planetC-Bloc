@@ -6,7 +6,12 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"game"
+		"game",
+		"board",
+		"cellElements",
+		"roundLabel",
+		"actionButton",
+		"birdsButton"
 	],
 	"name" : "PCBGameElement",
 	"type" : "normal"
