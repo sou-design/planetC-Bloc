@@ -10,7 +10,7 @@ game: aGame
 		yourself.
 	cellElements := game cells collect: [ :cell |
 		(PCBCellElement on: cell)
-			addEventHandler: (PCBCellEventListener game: game);
+			addEventHandler: (PCBCellEventListener game: self);
 			yourself ].
 	board addChildren: cellElements.
 	self addChild: board.

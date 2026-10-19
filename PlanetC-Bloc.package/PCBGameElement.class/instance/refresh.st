@@ -6,7 +6,11 @@ refresh
 	cellElements do: [ :each | each showBirds: game birdsVisible ].
 	self updateVisibility.
 	self updateResults.
-		familyButtons with: game households do: [ :button :household |
-		button label: (household == game activeHousehold
-			ifTrue: [ '> ' , household name ]
-			ifFalse: [ household name ]) ].
+	familyButtons with: game households do: [ :button :household |
+		| active |
+		active := household == game activeHousehold.
+		button border: (active
+			ifTrue: [ BlBorder paint: Color black width: 4]
+			ifFalse: [ BlBorder empty ]).
+		button transformDo: [ :t |
+			t scaleBy: (active ifTrue: [ 1.1 ] ifFalse: [ 1 ]) ] ].

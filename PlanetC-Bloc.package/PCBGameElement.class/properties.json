@@ -13,7 +13,8 @@
 		"actionButton",
 		"birdsButton",
 		"resultBox",
-		"familyButtons"
+		"familyButtons",
+		"household"
 	],
 	"name" : "PCBGameElement",
 	"type" : "normal"
