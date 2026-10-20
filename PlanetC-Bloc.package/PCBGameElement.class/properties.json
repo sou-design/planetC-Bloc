@@ -14,7 +14,8 @@
 		"birdsButton",
 		"resultBox",
 		"familyButtons",
-		"household"
+		"household",
+		"playersHaveWindows"
 	],
 	"name" : "PCBGameElement",
 	"type" : "normal"

@@ -1,10 +1,14 @@
 event handling
 updateVisibility
-	| visibility |
-	visibility := game isOver
+	| playing controls |
+	playing := game isOver
 		ifTrue: [ BlVisibility gone ]
 		ifFalse: [ BlVisibility visible ].
-	board visibility: visibility.
-	actionButton visibility: visibility.
-	birdsButton visibility: visibility.
-	familyButtons do: [ :each | each visibility: visibility ]
+	controls := (game isOver or: [ household notNil ])
+		ifTrue: [ BlVisibility gone ]
+		ifFalse: [ BlVisibility visible ].
+	board visibility: playing.
+	actionButton visibility: controls.
+	birdsButton visibility: controls.
+	familyButtons with: game households do: [ :button :each |
+		button visibility: (self visibilityOfButtonFor: each) ]

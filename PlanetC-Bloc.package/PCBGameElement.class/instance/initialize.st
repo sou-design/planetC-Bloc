@@ -1,6 +1,7 @@
 initialization
 initialize
 	super initialize.
+		playersHaveWindows := false.
 	self
 		layout: BlLinearLayout vertical;
 		background: (Color fromHexString: 'F3EFE6');
