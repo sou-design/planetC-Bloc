@@ -10,6 +10,7 @@
 		"board",
 		"cellElements",
 		"roundLabel",
+		"timerLabel",
 		"actionButton",
 		"birdsButton",
 		"resultBox",

@@ -1,3 +1,5 @@
 as yet unclassified
 onGameChanged: anAnnouncement
-	self refresh
+	self isAttachedToSceneGraph
+		ifTrue: [ self enqueueTask: (BlTaskAction new action: [ self refresh ]) ]
+		ifFalse: [ self refresh ]

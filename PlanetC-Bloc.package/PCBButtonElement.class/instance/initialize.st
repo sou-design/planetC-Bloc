@@ -13,4 +13,8 @@ initialize
 	self addChild: labelElement.
 	self addEventHandlerOn: BlPrimaryClickEvent do: [ :anEvent |
 		anEvent consumed: true.
-		self click ]
+		self click ].
+		self addEventHandlerOn: BlMouseEnterEvent do: [ :anEvent |
+		self transformDo: [ :t | t scaleBy: 1.08 ] ].
+	self addEventHandlerOn: BlMouseLeaveEvent do: [ :anEvent |
+		self transformDo: [ :t | t scaleBy: 1 ] ]

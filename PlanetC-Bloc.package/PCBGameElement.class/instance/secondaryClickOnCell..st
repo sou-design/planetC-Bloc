@@ -1,3 +1,5 @@
 as yet unclassified
 secondaryClickOnCell: aCell
-	game secondaryClickOnCell: aCell
+	household
+		ifNil: [ game secondaryClickOnCell: aCell ]
+		ifNotNil: [ game takeBack: household from: aCell ]

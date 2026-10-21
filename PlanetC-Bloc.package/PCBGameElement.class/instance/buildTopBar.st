@@ -22,5 +22,7 @@ buildTopBar
 	birdsButton constraintsDo: [ :c | c linear vertical alignCenter ].
 	actionButton := PCBButtonElement label: '' action: [ game proceed ].
 	actionButton constraintsDo: [ :c | c linear vertical alignCenter ].
-	bar addChildren: { titles. spacer. birdsButton. actionButton }.
+	timerLabel := BlTextElement new.
+	timerLabel constraintsDo: [ :c | c linear vertical alignCenter ].
+	bar addChildren: { titles. spacer. timerLabel. birdsButton. actionButton }.
 	^ bar

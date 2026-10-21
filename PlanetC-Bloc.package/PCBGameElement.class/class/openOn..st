@@ -4,7 +4,7 @@ openOn: aGame
 	element := self new game: aGame; yourself.
 	space := BlSpace new.
 	space title: 'PlanetC'.
-	space extent: 1240 @ 800.
+	space extent: 1240 @ 1000.
 	space root addChild: element.
 	space show.
 	^ element

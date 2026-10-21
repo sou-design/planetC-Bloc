@@ -5,7 +5,7 @@ openAllOn: aGame
 	master playersHaveWindows: true.
 	space := BlSpace new.
 	space title: 'Game master'.
-	space extent: 1000 @ 900.
+	space extent: 1000 @ 1000.
 	space root addChild: master.
 	space show.
 	aGame households do: [ :each | self openOn: aGame household: each ]

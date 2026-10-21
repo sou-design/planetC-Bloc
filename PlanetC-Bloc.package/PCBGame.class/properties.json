@@ -14,7 +14,9 @@
 		"activeHousehold",
 		"announcer",
 		"birdsVisible",
-		"totalNewborns"
+		"totalNewborns",
+		"secondsLeft",
+		"ticker"
 	],
 	"name" : "PCBGame",
 	"type" : "normal"

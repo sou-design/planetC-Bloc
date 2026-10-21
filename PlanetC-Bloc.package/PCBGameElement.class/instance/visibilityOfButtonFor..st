@@ -1,6 +1,6 @@
 accessing
 visibilityOfButtonFor: aHousehold
-	game isOver ifTrue: [ ^ BlVisibility gone ].
+	game isHouseholdsTurn ifFalse: [ ^ BlVisibility gone ].
 	household ifNil: [
 		^ playersHaveWindows
 			ifTrue: [ BlVisibility gone ]
